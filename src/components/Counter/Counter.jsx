@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import "./Counter.scss";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(Math.round(Math.random() * 8));
 
   const handleIncrease = () => {
     setCount(count + 1);
