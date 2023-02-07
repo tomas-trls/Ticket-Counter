@@ -1,0 +1,25 @@
+.counter {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+    padding-top: 15px;
+  }
+  &__buttons-container {
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__result {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50% 50%;
+  }
+}

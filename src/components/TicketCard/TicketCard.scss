@@ -1,6 +1,42 @@
 .ticket-card {
-  border: 1px solid grey;
   margin: 10px;
   width: 250px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  background: linear-gradient(
+    15deg,
+    #996dbf,
+    #e374b6,
+    #ff91aa,
+    #ffbb91,
+    #ffd48c,
+    #f9ecbb
+  );
+  background-size: 400%;
+  animation: gradient ease 5s infinite;
+  box-shadow: 0px 4px 0px 0px black;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  &__text {
+    padding: 25px 20px;
+  }
+  &__role {
+    flex-shrink: 1;
+  }
 }
