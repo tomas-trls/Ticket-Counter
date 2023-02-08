@@ -32,11 +32,12 @@
       background-position: 0% 50%;
     }
   }
-
   &__text {
     padding: 25px 20px;
   }
-  &__role {
-    flex-shrink: 1;
+  &__name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 0px white;
   }
 }

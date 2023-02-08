@@ -9,18 +9,23 @@ const App = () => {
   const [employees, setEmployees] = useState(team);
 
   const handleSearch = (event) => {
-    setEmployees(
-      team.filter((employee) =>
-        employee.name.toLowerCase().includes(event.target.value.toLowerCase())
-      )
-    );
+    if (event.target.value === "") {
+      setEmployees(team);
+    } else {
+      setEmployees(
+        employees.filter((employee) =>
+          employee.name.toLowerCase().includes(event.target.value.toLowerCase())
+        )
+      );
+    }
   };
+
   const handleDropdown = (event) => {
     if (event.target.value === "") {
       setEmployees(team);
     } else {
       setEmployees(
-        team.filter((employee) => employee.role === event.target.value)
+        employees.filter((employee) => employee.role === event.target.value)
       );
     }
   };

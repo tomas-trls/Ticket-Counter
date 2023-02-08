@@ -5,11 +5,15 @@ const Dropdown = (props) => {
   const { handleDropdown } = props;
 
   return (
-    <>
+    <div className="dropdown">
       <label className="dropdown__label" htmlFor="roles">
-        Select roles:
+        Select roles
       </label>
-      <select id="roles" className="dropdown" onChange={handleDropdown}>
+      <select
+        id="roles"
+        className="dropdown__selector"
+        onChange={handleDropdown}
+      >
         <option className="dropdown__option" value=""></option>
         <option className="dropdown__option" value="Junior Software Developer">
           Junior Software Developer
@@ -30,7 +34,7 @@ const Dropdown = (props) => {
           Hard Man
         </option>
       </select>
-    </>
+    </div>
   );
 };
 

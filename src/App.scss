@@ -7,23 +7,7 @@
 }
 
 body {
-  height: 96vh;
-  background: linear-gradient(175deg, #08203e, #557c93);
-  background-size: 1000%;
-  animation: gradient 10s ease-in-out infinite;
-
-  @keyframes gradient {
-    0% {
-      background-position: 50% 0%;
-    }
-    50% {
-      background-position: 50% 100%;
-    }
-
-    100% {
-      background-position: 50% 0%;
-    }
-  }
+  background-color: #2d4d67;
 }
 
 .ticket-counter__header {
@@ -35,9 +19,9 @@ body {
 }
 
 .ticket-counter__filter {
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 1362px;
+  margin: 0 auto 45px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
 }
