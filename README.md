@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/github/tomas-trls/ticket-counter.svg)](https://wakatime.com/badge/github/tomas-trls/ticket-counter)
 # Getting Started with Ticket Counter
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
