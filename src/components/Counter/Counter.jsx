@@ -11,6 +11,9 @@ const Counter = () => {
 
   const handleDecrease = () => {
     setCount(count - 1);
+    if (count <= 0) {
+      setCount(0);
+    }
   };
 
   return (

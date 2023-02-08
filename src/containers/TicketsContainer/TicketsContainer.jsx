@@ -1,10 +1,11 @@
 import React from "react";
 import TicketCard from "../../components/TicketCard/TicketCard";
 import "./TicketsContainer.scss";
-import team from "../../data/team";
 
-const TicketsContainer = () => {
-  const TeamJSX = team.map((employee) => {
+const TicketsContainer = (props) => {
+  const { teamArr } = props;
+
+  const TeamJSX = teamArr.map((employee) => {
     return (
       <TicketCard key={employee.id} name={employee.name} role={employee.role} />
     );

@@ -28,7 +28,7 @@
   }
   &:active {
     .counter__button--front {
-      transition: all 600ms;
+      transition: all 300ms;
       transform: translateY(-1px);
     }
   }
